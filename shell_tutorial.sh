@@ -78,10 +78,11 @@ clear
 
 source import.sh
 
-modulesToBuild=${modulesDependency[OPE]}
-echo $modulesToBuild
+echo ${modulesDependency[OPE]}
+
+IFS=', ' read -r -a modulesToBuild <<< "${modulesDependency[OPE]}"
 
 for i in "${modulesToBuild[@]}";
 do
-  echo $i
+  echo "The module is $i"
 done
