@@ -80,7 +80,7 @@ source import.sh
 
 echo ${modulesDependency[OPE]}
 
-IFS=', ' read -r -a modulesToBuild <<< "${modulesDependency[OPE]}"
+IFS=' ' read -r -a modulesToBuild <<< "${modulesDependency[OPE]}"
 
 for i in "${modulesToBuild[@]}";
 do
