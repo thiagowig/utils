@@ -15,3 +15,11 @@ top -d 1
 # K - KIll a process
 
 
+sed 's/java/guava/' example.txt
+sed 's/java/guava/2' example.txt
+sed 's/java/guava/g' example.txt
+sed 's/java/guava/2g' example.txt
+sed 's/java/guava/p' example.txt
+
+
+
