@@ -22,4 +22,8 @@ sed 's/java/guava/2g' example.txt
 sed 's/java/guava/p' example.txt
 
 
+#SHOW USED PORTS
+netstat -tulpn
+
+
 
