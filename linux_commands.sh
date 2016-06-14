@@ -27,5 +27,5 @@ netstat -tulpn
 
 
 # HTTP POST call
-curl -X POST --header 'Content-Type: application/json' --header 'Accept: text/plain' 'http://localhost:8080/api/product/create' -d '{"i: "123", "description" : "Samsung"}
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: text/plain' 'http://localhost:8090/api/product/create' -d '{"id: "123", "description" : "Samsung"}'
 
