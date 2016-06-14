@@ -26,4 +26,6 @@ sed 's/java/guava/p' example.txt
 netstat -tulpn
 
 
+# HTTP POST call
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: text/plain' 'http://localhost:8080/api/product/create' -d '{"i: "123", "description" : "Samsung"}
 
