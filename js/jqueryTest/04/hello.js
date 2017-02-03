@@ -18,8 +18,13 @@ $(document).ready(function () {
   //$('#divid').text(title)
   //$('p').css('background-color', 'yellow')
 
+  $('em').attr({title: 'SIMONE'})
+  $('em').removeAttr("title")
+
   $('em').addClass('selected')
   $('#myid').addClass('highlight')
+
+  alert($('p').val())
 
   $('div').click(function () {
     var c = create()
