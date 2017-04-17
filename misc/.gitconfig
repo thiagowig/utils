@@ -1,0 +1,26 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Thiago Fonseca
+email = dev.thiago@gmail.com
+
+[diff]
+	tool = p4merge
+[difftool "p4merge"]
+	path = C:\\Program Files\\Perforce\\p4merge.exe
+[merge]
+	tool = p4merge
+[mergetool "p4merge"]
+	path = C:\\Program Files\\Perforce\\p4merge.exe
+[alias]
+	a = add
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	d = diff
+	pl = pull
+	ps = push
+	brc = "!git branch | grep '*' | sed 's/* //' | tr -d '[feature]/"'
+	header = "!f() { git brc | awk '{print \"[thiagowig][ithiago][\"$1\"]\"}' | xargs echo $1;}; f"
+	ct = "!eval git commit -m \"'\"$(git header) $1\"'\" && :"
