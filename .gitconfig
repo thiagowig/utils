@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 name = Thiago Fonseca
-email = tfonseca@ciandt.com
+email = dev.thiago@gmail.com
 
 [diff]
 	tool = p4merge
@@ -22,6 +22,6 @@ email = tfonseca@ciandt.com
 	pl = pull
 	ps = push
 	brc = "!git branch | grep '*' | sed 's/* //' | tr -d '[feature]/"'
-	header = "!f() { git brc | awk '{print \"[tfonseca][CIT][\"$1\"]\"}' | xargs echo $1;}; f"
+	header = "!f() { git brc | awk '{print \"[tfonseca][\"$1\"]\"}' | xargs echo $1;}; f"
 	ct = "!eval git commit -m \"'\"$(git header) $1\"'\" && :"
 /c/Users/tfonseca/.gitconfig
