@@ -21,6 +21,7 @@ email = dev.thiago@gmail.com
 	d = diff
 	pl = pull
 	ps = push
+	m = merge
 	brc = "!git branch | grep '*' | sed 's/* //' | tr -d '[feature]/"'
 	header = "!f() { git brc | awk '{print \"[tfonseca][\"$1\"]\"}' | xargs echo $1;}; f"
 	ct = "!eval git commit -m \"'\"$(git header) $1\"'\" && :"
