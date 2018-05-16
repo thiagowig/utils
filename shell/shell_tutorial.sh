@@ -86,3 +86,10 @@ for i in "${modulesToBuild[@]}";
 do
   echo "The module is $i"
 done
+
+
+
+
+
+# Replace a file content
+sed -i '/cucumber/ s//cucumber-test/g' package.json
