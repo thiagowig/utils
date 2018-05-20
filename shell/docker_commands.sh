@@ -12,3 +12,6 @@ docker build -t json-schema-image .
 # Inicia o container
 docker run -p 8081:8081 json-schema-image
 
+# Remove all containers
+docker rm $(docker ps -a -q)
+
