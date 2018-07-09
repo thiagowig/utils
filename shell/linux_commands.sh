@@ -29,3 +29,7 @@ netstat -tulpn
 # HTTP POST call
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: text/plain' 'http://localhost:8090/api/product/create' -d '{"id: "123", "description" : "Samsung"}'
 
+
+#CRONTAB
+# De hora em hora. Entre 8 e 18. Dia útil apenas.
+H 8-18 * * 1-5
