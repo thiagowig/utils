@@ -1,0 +1,23 @@
+- Open/close Terminal = ALT + F12
+- Rename a file = SHIFT + F6
+- Organize imports = CTRL + ALT + O
+- Delete line = CTRL + Y
+- Code completion = CTRL + SPACE / CTRL + SHIT + SPACE / CTRL + SHIFT + ENTER
+- Quick access = SHIFT twice
+- Maximize a window = CTRL + SHIFT + F12
+- Open type = CTRL + N
+- Open resource = CTRL + SHIT + N
+- Navigate to symbol = CTRL + SHIT + ALT + N
+- Recent file = CTRL + E
+- File structure = CTRL + F12
+- Show intention action = ALT + ENTER
+- Quick hierarchy = CTRL + H
+- Navigate between tabs = ALT + DIRECTION (LEFT OR RIGHT)
+- RUN = SHIFT + F10
+- DEBUG = SHIFT + F9
+- Ident lines = CTRL + ALT + I
+- Find usage = ALT + F7
+- Find in files = CTRL + SHIFT + F
+- Duplicate line = CTRL + D
+- Find next = F3
+
