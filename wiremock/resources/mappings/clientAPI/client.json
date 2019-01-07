@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/api/client/123"
+    },
+    "response": {
+        "status": 200,
+        "body": "{\"name\": \"Thiago Fonseca\"}"
+    }
+}
