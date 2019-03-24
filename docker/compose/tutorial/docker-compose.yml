@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+  jenkins:
+    container_name: jenkins_tutorial
+    image: jenkins/jenkins:lts
+    ports: 
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - "jenkins_home:/var/jenkins_home"
+    depends_on:
+      - sonar
+      - nexus
+
+  sonar:
+    container_name: sonar_tutorial
+    image: sonarqube
+    ports: 
+      - "9000:9000"
+
+  nexus:
+    container_name: nexus_tutorial
+    image: sonatype/nexus3
+    ports: 
+      - "8081:8081"
