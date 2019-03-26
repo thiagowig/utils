@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# @author: Thiago Fonseca - tfonseca@ciandt.com
+# @author: Thiago Fonseca
 # @desc: 
 #
 #
 
-echo "VALIDAÇÃO DE USUÁRIOS DO RTC"
+echo "VALIDAÇÃO DE USUÁRIOS"
 
 fileLocation=$1
 usersFile=$(cat $fileLocation)
