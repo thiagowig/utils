@@ -6,8 +6,6 @@ services:
     container_name: joomla_mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
-    volumes:
-      - "~/dev/repo/personal/utils/docker/compose/joomla/app:/var/www/html"
     environment:
       MYSQL_ROOT_PASSWORD: admin123
 
@@ -24,8 +22,6 @@ services:
     image: joomla
     container_name: joomla_app
     restart: always
-    volumes:
-      - "~/dev/repo/personal/utils/docker/compose/joomla/app:/var/www/html"
     ports:
       - 8081:80
     environment:
