@@ -1,7 +1,5 @@
 declare -A modulesDependency
 
-modulesDependency[OPE]="OPE IND OPS"
-modulesDependency[ADM]="ADM"
-modulesDependency[MGMT]="MGMT OPE IND"
-modulesDependency[IND]="IND"
-modulesDependency[COMMONS]="COMMONS ADM IND MGMT OPE OPS"
+modulesDependency[MOD01]="MOD02 MOD03"
+modulesDependency[MOD02]="MOD03"
+modulesDependency[MOD03]=""
