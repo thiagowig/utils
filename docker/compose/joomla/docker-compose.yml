@@ -31,3 +31,17 @@ services:
       JOOMLA_DB_PASSWORD: admin123
     depends_on:
       - "db"
+      
+  joomlaBase:
+    image: joomla
+    container_name: joomla_app_base
+    restart: always
+    ports:
+      - 8083:80
+    environment:
+      JOOMLA_DB_HOST: db
+      JOOMLA_DB_NAME: joomla
+      JOOMLA_DB_USER: root
+      JOOMLA_DB_PASSWORD: admin123
+    depends_on:
+      - "db"
