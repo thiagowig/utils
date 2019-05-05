@@ -1,3 +1,9 @@
+runningContainers=$(docker container ls -q) 
 
+if [ ! -z "$runningContainers" ]
+then
+    echo "RUNNING CONTAINERS: $runningContainers"
+    docker container stop $runningContainers
+fi
 
-docker container stop $(docker container ls -a -q) && docker system prune -a -f --volumes
+docker system prune -a -f --volumes
