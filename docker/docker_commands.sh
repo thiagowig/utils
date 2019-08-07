@@ -15,3 +15,5 @@ docker run -p 8081:8081 json-schema-image
 # Remove all containers
 docker rm $(docker ps -a -q)
 
+# Acess your container
+docker exec -it <CONTAINER_NAME> bash
