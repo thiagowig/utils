@@ -17,4 +17,4 @@ gcloud pubsub subscriptions create <SUBSCRIPTION_NAME> --topic <TOPIC_NAME>
 gcloud sql instances create poc-instance --tier=db-f1-micro --region=us-central
 
 # Create a user um CloudSQL
-gcloud sql users set-password root % --instance [INSTANCE_NAME] --password [PASSWORD]
+gcloud sql users set-password root --host=% --instance [INSTANCE_NAME] --password [PASSWORD]
