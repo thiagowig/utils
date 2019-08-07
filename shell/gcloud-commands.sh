@@ -12,3 +12,6 @@ gcloud pubsub topics create <PUBSUB_NAME>
 
 # Create a Pubsub subscription
 gcloud pubsub subscriptions create <SUBSCRIPTION_NAME> --topic <TOPIC_NAME>
+
+# Create a Cloud SQL instance
+gcloud sql instances create poc-instance --tier=db-f1-micro --region=us-central
