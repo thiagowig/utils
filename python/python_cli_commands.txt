@@ -1,6 +1,12 @@
+
+# VirtualEnv
 virtualenv --python=/usr/bin/python3.6 env
 source env/bin/activate
 pip install -r requirements.txt
 python main.py
 
+# Install package
 pip install connexion[swagger-ui]
+
+# PipEnv
+pipenv install --python=/usr/bin/python3.7
