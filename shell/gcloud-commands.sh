@@ -1,3 +1,6 @@
+# Login
+gcloud auth login
+
 # Change project
 gcloud config set project my-project
 
