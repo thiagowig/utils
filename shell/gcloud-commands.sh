@@ -21,3 +21,12 @@ gcloud sql instances create poc-instance --tier=db-f1-micro --region=us-central
 
 # Create a user um CloudSQL
 gcloud sql users set-password root --host=% --instance [INSTANCE_NAME] --password [PASSWORD]
+
+# Redis
+
+## Create instance
+gcloud redis instances create myinstance --size=2 --region=us-central1 --redis-version=redis_4_0
+
+## Details
+gcloud redis instances describe myinstance --region=us-central1
+
