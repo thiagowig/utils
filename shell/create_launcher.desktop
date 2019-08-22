@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/home/tfonseca/dev/tools/pycharm-2019.2/bin/pycharm.sh
+Name=Pycharm
+Comment=Execute Pycharm
+Icon=/home/tfonseca/dev/tools/pycharm-2019.2/bin/pycharm.png
