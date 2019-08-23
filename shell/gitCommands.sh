@@ -21,3 +21,6 @@ git config --global alias.st status
 
 # Git clone em um branch específico
 git clone -b BRANCH_NAME http://github.com/nameSpace/repoName
+
+# Change the last commig
+git commit --amend
