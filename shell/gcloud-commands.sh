@@ -6,6 +6,12 @@ gcloud auth revoke
 gcloud config set project my-project
 
 
+# APP ENGINE
+
+# Deploy
+gcloud app deploy --project <PROJECT_ID> --version <VERSION_NAME> --no-promote
+
+
 # FUNCTIONS
 
 # Deploy a function
