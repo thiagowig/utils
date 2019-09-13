@@ -45,7 +45,10 @@ gcloud sql users set-password root --host=% --instance [INSTANCE_NAME] --passwor
 ./cloud_sql_proxy -instances="<CONNECTION_NAME>"=tcp:3306
 
 # Connect to database
-mysql --host 127.0.0.1 --user <USER_NAME> --password <USER_PASSWORD>
+mysql --host 127.0.0.1 --user=<USER_NAME> --password=<USER_PASSWORD>
+
+# Create database
+CREATE DATABASE <DATABASE_NAME;
 
 # REDIS
 
