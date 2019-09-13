@@ -41,6 +41,11 @@ gcloud sql instances create poc-instance --tier=db-f1-micro --region=us-central
 # Create a user um CloudSQL
 gcloud sql users set-password root --host=% --instance [INSTANCE_NAME] --password [PASSWORD]
 
+# Open Connection
+./cloud_sql_proxy -instances="<CONNECTION_NAME>"=tcp:3306
+
+# Connect to database
+mysql --host 127.0.0.1 --user <USER_NAME> --password <USER_PASSWORD>
 
 # REDIS
 
