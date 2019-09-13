@@ -32,6 +32,9 @@ gcloud sql instances list
 # Describe a single instance
 gcloud sql instances describe sandbox-cloudsql-instance
 
+# Get connectionName
+gcloud sql instances describe sandbox-cloudsql-instance | grep connectionName | awk '{print $2}'
+
 # Create a Cloud SQL instance
 gcloud sql instances create poc-instance --tier=db-f1-micro --region=us-central
 
