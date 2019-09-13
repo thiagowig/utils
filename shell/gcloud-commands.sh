@@ -48,7 +48,7 @@ gcloud sql users set-password root --host=% --instance [INSTANCE_NAME] --passwor
 mysql --host 127.0.0.1 --user=<USER_NAME> --password=<USER_PASSWORD>
 
 # Create database
-CREATE DATABASE <DATABASE_NAME;
+CREATE DATABASE <DATABASE_NAME>;
 
 # REDIS
 
