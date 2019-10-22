@@ -72,6 +72,8 @@ gcloud services enable pubsub.googleapis.com
 
 
 # Deployment Manager
+gcloud deployment-manager types list
+
 gcloud deployment-manager deployments create test-deployment --config provisioning.yaml
 
 gcloud deployment-manager deployments delete test-deployment
