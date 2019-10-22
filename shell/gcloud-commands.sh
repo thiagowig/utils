@@ -63,3 +63,10 @@ gcloud redis instances create myinstance --size=2 --region=us-central1 --redis-v
 ## Details
 gcloud redis instances describe myinstance --region=us-central1
 
+
+
+# Enable APIS
+gcloud services list --available | grep pubsub
+
+gcloud services enable pubsub.googleapis.com
+
