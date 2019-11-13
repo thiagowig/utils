@@ -77,3 +77,12 @@ gcloud deployment-manager types list
 gcloud deployment-manager deployments create test-deployment --config provisioning.yaml
 
 gcloud deployment-manager deployments delete test-deployment
+
+
+# Storage
+
+gsutil mb -l us-central1 gs://sandbox-dev-bucket-management/
+
+gsutil cp .env gs://sandbox-dev-bucket-management/
+
+gsutil ls -l gs://sandbox-dev-bucket-management/
