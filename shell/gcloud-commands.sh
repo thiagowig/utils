@@ -85,3 +85,7 @@ gsutil mb -l us-central1 gs://my-bucket/
 gsutil cp .env gs://my-bucket/
 
 gsutil ls -l gs://my-bucket/
+
+
+# KMS
+gcloud services enable cloudkms.googleapis.com
