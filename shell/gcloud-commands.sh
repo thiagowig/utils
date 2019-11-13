@@ -89,3 +89,7 @@ gsutil ls -l gs://my-bucket/
 
 # KMS
 gcloud services enable cloudkms.googleapis.com
+
+gcloud kms keyrings create database-keys --location global
+
+gcloud kms keys create database-key --keyring database-keyring  --location global --purpose encryption
