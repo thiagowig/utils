@@ -80,8 +80,8 @@ gcloud deployment-manager deployments delete test-deployment
 
 
 # Storage
-gsutil mb -l us-central1 gs://sandbox-dev-bucket-management/
+gsutil mb -l us-central1 gs://my-bucket/
 
-gsutil cp .env gs://sandbox-dev-bucket-management/
+gsutil cp .env gs://my-bucket/
 
-gsutil ls -l gs://sandbox-dev-bucket-management/
+gsutil ls -l gs://my-bucket/
