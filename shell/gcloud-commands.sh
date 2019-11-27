@@ -95,3 +95,6 @@ gcloud kms keyrings create database-keys --location global
 gcloud kms keys create database-key --keyring database-keyring  --location global --purpose encryption
 
 gcloud kms encrypt --location global --keyring sandbox-qa-keyring --key sandbox-qa-key-mail --plaintext-file mail_credentials.json --ciphertext-file mail_credentials.json.enc
+
+
+gcloud kms keys add-iam-policy-binding <KEY> --location global --keyring <RING> --member <SERVICE_ACCOUNT> --role roles/cloudkms.cryptoKeyEncrypterDecrypter
