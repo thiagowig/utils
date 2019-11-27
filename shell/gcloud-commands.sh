@@ -93,3 +93,5 @@ gcloud services enable cloudkms.googleapis.com
 gcloud kms keyrings create database-keys --location global
 
 gcloud kms keys create database-key --keyring database-keyring  --location global --purpose encryption
+
+gcloud kms encrypt --location global --keyring sandbox-qa-keyring --key sandbox-qa-key-mail --plaintext-file mail_credentials.json --ciphertext-file mail_credentials.json.enc
