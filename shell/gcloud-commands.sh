@@ -98,3 +98,10 @@ gcloud kms encrypt --location global --keyring sandbox-qa-keyring --key sandbox-
 
 
 gcloud kms keys add-iam-policy-binding <KEY> --location global --keyring <RING> --member <SERVICE_ACCOUNT> --role roles/cloudkms.cryptoKeyEncrypterDecrypter
+
+
+steps:
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+timeout: "1600s"
+
