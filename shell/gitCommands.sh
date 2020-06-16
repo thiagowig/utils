@@ -24,3 +24,7 @@ git clone -b BRANCH_NAME http://github.com/nameSpace/repoName
 
 # Change the last commig
 git commit --amend
+
+# Force head to specific commit, removing the others
+git reset --hard cedc856
+git push --force origin master
