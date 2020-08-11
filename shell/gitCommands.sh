@@ -28,3 +28,6 @@ git commit --amend
 # Force head to specific commit, removing the others
 git reset --hard cedc856
 git push --force origin master
+
+# Undo last commit
+git reset --soft HEAD~1
