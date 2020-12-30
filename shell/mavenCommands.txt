@@ -1,1 +1,11 @@
 mvn archetype:generate -DgroupId=br.com.ithiago -DartifactId=java8 -DarchetypeArtifactId=maven-archetype-quickstart
+
+mvn archetype:generate \
+    -DarchetypeGroupId=software.amazon.awssdk \
+    -DarchetypeArtifactId=archetype-lambda \
+    -DarchetypeVersion=2.11.4 \
+    -DgroupId=br.com.ithiago.java \
+    -DartifactId=aws-lambda-test \
+    -Dservice=s3  \
+    -Dregion=us-west-2 \
+    -DinteractiveMode=false
