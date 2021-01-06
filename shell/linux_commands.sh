@@ -33,3 +33,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: text/pl
 #CRONTAB
 # De hora em hora. Entre 8 e 18. Dia útil apenas.
 H 8-18 * * 1-5
+
+
+# Find files or Folders
+find . -type d -name vault
