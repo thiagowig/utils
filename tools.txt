@@ -1,0 +1,9 @@
+ZSH
+Oh-my-zsh
+SDKMAN
+Java
+Maven
+Github ssh key
+Docker
+Intellij
+Visual studio
